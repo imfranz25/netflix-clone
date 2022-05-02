@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import axios from "./../api/axios";
 // API OBJECT REQUESTS (E.G fetchNetflixOriginals) -> Original Movies of Netflix
 import requests from "./../api/request";
+// STYLE
+import "./../css/Banner.scss";
 
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/original/";
 
@@ -31,12 +33,14 @@ function Banner() {
       }}
     >
       <div className="banner-content">
-        <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
+        <h1 className="banner-title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
         <div className="banner-btn">
           <button>Play</button>
           <button>My List</button>
         </div>
-        <h1>{movie?.overview}</h1>
+        <h1 className="banner-desc">{movie?.overview}</h1>
       </div>
     </header>
   );
