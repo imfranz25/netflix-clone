@@ -2,6 +2,9 @@
 .row-container {
   .row-posters {
     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
     .poster-img {
       width: 100%;
       object-fit: contain;
@@ -13,5 +16,8 @@
     .poster-img:hover {
       transform: scale(1.08);
     }
+  }
+  .row-posters::-webkit-scrollbar {
+    display: none;
   }
 }
