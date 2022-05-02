@@ -1,10 +1,15 @@
+// COMPONENTS
 import Row from "./components/Row";
+import Banner from "./components/Banner";
+// API OBJECT REQUESTS (E.G fetchNetflixOriginals) -> Original Movies of Netflix
 import requests from "./api/request";
+// STYLES
 import "./css/App.scss";
 
 function App() {
   return (
     <div>
+      <Banner />
       <Row
         title="Netflix Originals"
         fetchURL={requests.fetchNetflixOriginals}
