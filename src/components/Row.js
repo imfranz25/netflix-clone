@@ -6,7 +6,7 @@ import "./../css/Row.scss";
 
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchURL }) {
+function Row({ title, fetchURL, isLargeRow }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -24,8 +24,10 @@ function Row({ title, fetchURL }) {
         {movies.map((movie, index) => (
           <img
             key={movie.id}
-            className="poster-img"
-            src={IMG_BASE_URL + movie.poster_path}
+            className={`poster-img ${isLargeRow && "poster-imgLarge"}`}
+            src={`${IMG_BASE_URL}${
+              isLargeRow ? movie.poster_path : movie.backdrop_path
+            }`}
             alt={movie.name}
           />
         ))}

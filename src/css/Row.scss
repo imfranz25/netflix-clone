@@ -8,13 +8,19 @@
     .poster-img {
       width: 100%;
       object-fit: contain;
-      max-height: 200px;
+      max-height: 100px;
       transition: transform 450ms;
       margin-right: 10px;
       cursor: pointer;
     }
     .poster-img:hover {
       transform: scale(1.08);
+    }
+    .poster-imgLarge {
+      max-height: 250px;
+    }
+    .poster-imgLarge:hover {
+      transform: scale(1.09);
     }
   }
   .row-posters::-webkit-scrollbar {

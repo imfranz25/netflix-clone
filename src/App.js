@@ -1,5 +1,6 @@
 import Row from "./components/Row";
 import requests from "./api/request";
+import "./css/App.scss";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Row
         title="Netflix Originals"
         fetchURL={requests.fetchNetflixOriginals}
+        isLargeRow
       />
       <Row title="Trending Now" fetchURL={requests.fetchTrending} />
       <Row title="Top Rated" fetchURL={requests.fetchTopRated} />
