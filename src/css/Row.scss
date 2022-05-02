@@ -1,6 +1,7 @@
 // POSTER CONTAINER -> BOXES ( ENCLOSED WITH OWN CONTAINER TO MAKE SURE IT IS SCOPED PROPERLY)
 .row-container {
   margin-left: 20px;
+  color: white;
   .row-posters {
     display: flex;
     overflow-x: scroll;

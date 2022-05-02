@@ -42,6 +42,7 @@ function Banner() {
         </div>
         <h1 className="banner-desc">{movie?.overview}</h1>
       </div>
+      <div className="banner-fade"></div>
     </header>
   );
 }
