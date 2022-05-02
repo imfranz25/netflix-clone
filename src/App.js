@@ -1,8 +1,11 @@
+import Row from './components/Row';
+import requests from './api/request';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Row title="Netflix Originals" fetchURL={requests.fetchNetflixOriginals} />
+      <Row title="Trending Now" fetchURL={requests.fetchTrending} />
     </div>
   );
 }
