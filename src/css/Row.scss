@@ -1,0 +1,11 @@
+// POSTER CONTAINER -> BOXES
+.poster-container {
+  .row-posters {
+    display: flex;
+    .poster-img {
+      width: 100%;
+      object-fit: contain;
+      max-height: 100px;
+    }
+  }
+}
