@@ -22,7 +22,7 @@ function Row({ title, fetchURL, isLargeRow }) {
 
   const opts = {
     height: "390",
-    width: "95%",
+    width: "100%",
     playerVars: {
       autoplay: 1,
     },
@@ -58,7 +58,11 @@ function Row({ title, fetchURL, isLargeRow }) {
           />
         ))}
       </div>
-      {trailerUrl && <Youtube videoId={trailerUrl} opts={opts} />}
+      {trailerUrl && (
+        <div style={{ padding: "0px", margin: "0px", paddingRight: "20px" }}>
+          <Youtube videoId={trailerUrl} opts={opts} />
+        </div>
+      )}
     </div>
   );
 }
