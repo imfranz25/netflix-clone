@@ -1,6 +1,7 @@
 // COMPONENTS
 import Row from "./components/Row";
 import Banner from "./components/Banner";
+import Nav from "./components/Nav";
 // API OBJECT REQUESTS (E.G fetchNetflixOriginals) -> Original Movies of Netflix
 import requests from "./api/request";
 // STYLES
@@ -9,6 +10,7 @@ import "./css/App.scss";
 function App() {
   return (
     <div className="app">
+      <Nav />
       <Banner />
       <Row
         title="Netflix Originals"

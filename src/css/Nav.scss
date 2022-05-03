@@ -1,0 +1,31 @@
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  // Animation
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  .nav-logo,
+  .nav-avatar {
+    object-fit: contain;
+    position: fixed;
+    cursor: pointer;
+  }
+  .nav-logo {
+    left: 20px;
+    width: 90px;
+  }
+  .nav-avatar {
+    right: 20px;
+    width: 30px;
+  }
+}
+// Black BG if Scroll Downward up to 100px
+.nav-black {
+  background-color: #111;
+}
