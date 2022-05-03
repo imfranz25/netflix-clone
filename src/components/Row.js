@@ -22,7 +22,7 @@ function Row({ title, fetchURL, isLargeRow }) {
 
   const opts = {
     height: "390",
-    width: "100%",
+    width: "95%",
     playerVars: {
       autoplay: 1,
     },
@@ -44,7 +44,7 @@ function Row({ title, fetchURL, isLargeRow }) {
 
   return (
     <div className="row-container">
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <div className="row-posters">
         {movies.map((movie, index) => (
           <img
