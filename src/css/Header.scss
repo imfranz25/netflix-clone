@@ -1,0 +1,88 @@
+/* HEADER SECTION STARTS */
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center
+    center/cover;
+}
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+/*NAVBAR*/
+.showcase-top {
+  position: relative;
+  z-index: 2;
+  padding: 26px 0px 0px 55px;
+}
+.showcase-top #logo {
+  height: 35px;
+}
+.showcase-top .submit {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 5px 16px;
+  border-radius: 3px;
+  float: right;
+  position: relative;
+  right: 55px;
+}
+.showcase-top select {
+  background-color: transparent;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  float: right;
+  position: relative;
+  right: 85px;
+}
+.showcase-top select option {
+  color: black;
+}
+/*GET STARTED*/
+.showcase .get-started-container {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  position: relative;
+  top: 180px;
+  width: 100%;
+}
+.showcase .get-started-container h1,
+p {
+  color: white;
+}
+.showcase .get-started-container h1 {
+  font-size: 3.9rem;
+}
+.showcase .get-started-container .para-1 {
+  font-size: 1.7rem;
+}
+.showcase .get-started-container .para-2 {
+  font-size: 1.2rem;
+}
+.showcase .get-started-container input {
+  width: 35%;
+  padding: 22px;
+  border: none;
+  margin-top: 0.5%;
+  outline: none;
+}
+.showcase .get-started-container button {
+  padding: 22px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  margin-left: -0.3%;
+  font-weight: bold;
+}
+/*HEADER SECTION ENDS*/
