@@ -8,8 +8,9 @@ function Header() {
         <img
           id="logo"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png?20190206123158"
+          alt="Netflix Logo"
         />
-        <button className="submit" type="submit">
+        <button className="submit" type="button">
           Sign In
         </button>
       </nav>
@@ -21,8 +22,10 @@ function Header() {
         <p className="para-2">
           Ready to watch? Enter your email to create or restart your membership.
         </p>
-        <input type="text" name="email" placeholder="Email Address" />
-        <button type="submit">Get Started ></button>
+        <div className="email-container">
+          <input type="text" name="email" placeholder="Email Address" />
+          <button type="submit">Get Started ></button>
+        </div>
       </div>
     </header>
   );

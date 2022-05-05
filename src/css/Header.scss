@@ -10,19 +10,22 @@
     position: relative;
     z-index: 2;
     padding: 26px 0px 0px 55px;
+
+    .submit {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      float: right;
+      position: relative;
+      right: 55px;
+      padding: 8px 15px 8px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
   }
-  .showcase-top #logo {
+  #logo {
     height: 35px;
-  }
-  .showcase-top .submit {
-    background-color: #e50914;
-    color: white;
-    border: none;
-    padding: 5px 16px;
-    border-radius: 3px;
-    float: right;
-    position: relative;
-    right: 55px;
   }
   /*GET STARTED*/
   .get-started-container {
@@ -30,36 +33,29 @@
     position: relative;
     text-align: center;
     position: relative;
-    top: 180px;
+    top: 160px;
     width: 100%;
-  }
-  .get-started-container h1,
-  p {
-    color: white;
-  }
-  .get-started-container h1 {
-    font-size: 3.9rem;
-  }
-  .get-started-container .para-1 {
-    font-size: 1.7rem;
-  }
-  .get-started-container .para-2 {
-    font-size: 1.2rem;
-  }
-  .get-started-container input {
-    width: 35%;
-    padding: 22px;
-    border: none;
-    margin-top: 0.5%;
-    outline: none;
-  }
-  .get-started-container button {
-    padding: 22px;
-    border: none;
-    background-color: #e50914;
-    color: white;
-    margin-left: -0.3%;
-    font-weight: bold;
+    h1,
+    p {
+      color: white;
+    }
+    input {
+      width: 35%;
+      padding: 22px;
+      border: none;
+      outline: none;
+    }
+    button {
+      border: none;
+      background-color: #e50914;
+      color: white;
+    }
+    .email-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
 }
 // AFTER DESIGN
@@ -75,3 +71,37 @@
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 /*HEADER SECTION ENDS*/
+
+// MOBILE
+@media only screen and (max-width: 767px) {
+  .get-started-container {
+    h1 {
+      font-size: 22px;
+    }
+  }
+}
+
+// MEDIA QUERIES - TABLET TO DESKTOP
+@media only screen and (min-width: 768px) {
+  .get-started-container {
+    h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    .para-1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    .para-2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    button {
+      padding: 15px 22px 15px 22px;
+      margin-left: -0.3%;
+      font-size: 26px;
+    }
+  }
+}

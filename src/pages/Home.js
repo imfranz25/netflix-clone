@@ -36,11 +36,7 @@ function Home() {
             <img src={dl__img} alt="Netflix Download" />
             <div className="box">
               <img className="boxshot" src={box__shot} alt="Netflix Box Shot" />
-              <p>
-                Stranger Things
-                <br />
-                <a href="#">Downloading...</a>
-              </p>
+              <label>Downloading...</label>
               <img
                 className="download-gif"
                 src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
