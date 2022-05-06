@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 //PAGES
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 // STYLES
 import "./css/App.scss";
@@ -18,6 +19,7 @@ function App() {
     <div className={SetBGDashboard() && "app"}>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
