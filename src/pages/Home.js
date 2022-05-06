@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./../components/Header";
+import GetStarted from "./../components/GetStarted";
 import QuestionAccordion from "./../components/QuestionAccordion";
 import Footer from "./../components/Footer";
 // STYLE
@@ -17,7 +18,7 @@ function Home() {
   return (
     <div className="home-container">
       {/*Header Section*/}
-      <Header />
+      <Header innerContent={<GetStarted />} isHome />
       {/*Main Container Section*/}
       <main className="main-section">
         <div className="section-container">
