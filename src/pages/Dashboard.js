@@ -7,7 +7,7 @@ import Nav from "./../components/Nav";
 // API OBJECT REQUESTS (E.G fetchNetflixOriginals) -> Original Movies of Netflix
 import requests from "./../api/request";
 
-function Dashboard({ isAuth }) {
+function Dashboard({ isAuth, setAuth }) {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function Dashboard({ isAuth }) {
 
   return (
     <>
-      <Nav />
+      <Nav setAuth={setAuth} />
       <Banner />
       <Row
         title="Netflix Originals"

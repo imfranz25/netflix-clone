@@ -20,7 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login setAuth={setAuth} />} />
-        <Route path="/dashboard" element={<Dashboard isAuth={isAuth} />} />
+        <Route
+          path="/dashboard"
+          element={<Dashboard isAuth={isAuth} setAuth={setAuth} />}
+        />
       </Routes>
     </div>
   );
