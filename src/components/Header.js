@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+// STYLES
 import "./../css/Header.scss";
 
 function Header({ innerContent, isHome }) {
@@ -12,7 +12,7 @@ function Header({ innerContent, isHome }) {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png?20190206123158"
           alt="Netflix Logo"
         />
-        If isHome var exist then show signin button
+        {/*If isHome var exist then show signin button*/}
         {isHome && (
           <Link to="/login">
             <button className="submit" type="button">
