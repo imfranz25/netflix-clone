@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./../components/Header";
 import QuestionAccordion from "./../components/QuestionAccordion";
+import Footer from "./../components/Footer";
 // STYLE
 import "./../css/Home.scss";
 // ASSETS
@@ -89,6 +90,8 @@ function Home() {
       {/*FAQ Section*/}
       <QuestionAccordion />
       {/*Email Section*/}
+      {/*Footer Section*/}
+      <Footer />
     </div>
   );
 }
