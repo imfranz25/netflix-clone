@@ -55,13 +55,15 @@ function Home() {
         </div>
         <div className="section-container">
           <div className="left-column">
-            <h1>Watch everywhere.</h1>
-            <h3>
-              Stream unlimited movies and TV shows on your phone, tablet,
-              laptop, and TV without paying more.
-            </h3>
+            <div>
+              <h1>Watch everywhere.</h1>
+              <h3>
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV without paying more.
+              </h3>
+            </div>
           </div>
-          <div className="right-column">
+          <div className="right-column vid-column2">
             <img src={comp__img} alt="Netflix Computer" />
             <video className="video-2" autoPlay playsInline muted loop>
               <source src={video__2} type="video/mp4" />
