@@ -4,10 +4,10 @@ import Header from "./../components/Header";
 import LoginForm from "./../components/LoginForm";
 import Footer from "./../components/Footer";
 
-function Login() {
+function Login({ setAuth }) {
   return (
     <div className="login-container">
-      <Header innerContent={<LoginForm />} />
+      <Header innerContent={<LoginForm setAuth={setAuth} />} />
       <Footer />
     </div>
   );

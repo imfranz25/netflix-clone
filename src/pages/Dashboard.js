@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 // COMPONENTS
 import Row from "./../components/Row";
 import Banner from "./../components/Banner";
@@ -6,7 +7,15 @@ import Nav from "./../components/Nav";
 // API OBJECT REQUESTS (E.G fetchNetflixOriginals) -> Original Movies of Netflix
 import requests from "./../api/request";
 
-function Dashboard() {
+function Dashboard({ isAuth }) {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isAuth) {
+      navigate("/login");
+    }
+  }, [isAuth]);
+
   return (
     <>
       <Nav />

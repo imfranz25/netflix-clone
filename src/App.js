@@ -16,11 +16,11 @@ function App() {
   };
 
   return (
-    <div className={SetBGDashboard() && "app"}>
+    <div className={SetBGDashboard && "app"}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login setAuth={setAuth} />} />
+        <Route path="/dashboard" element={<Dashboard isAuth={isAuth} />} />
       </Routes>
     </div>
   );

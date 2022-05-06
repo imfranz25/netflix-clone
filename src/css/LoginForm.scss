@@ -3,11 +3,63 @@
   display: flex;
   justify-content: center;
   .form-box {
-    padding: 40px 45px;
+    max-width: 350px;
+    border-radius: 5px;
+    padding: 40px 55px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
     h1 {
       color: white;
+      margin-bottom: 20px;
+    }
+    .input-container {
+      width: 350px;
+      padding-top: 20px;
+    }
+    .MuiTextField-root {
+      background-color: rgba(20, 20, 20, 0.8);
+      width: 350px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .sign-container {
+      margin-top: 30px;
+      button {
+        width: 100%;
+        border: none;
+        background-color: #e50914;
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .btn-footer {
+      color: white;
+    }
+    .help {
+      margin-top: 7px;
+      float: right;
+    }
+    .new-container {
+      color: rgba(255, 255, 255, 0.5);
+      label {
+        margin-top: 35px;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      span {
+        margin-left: 5px;
+        color: white;
+        cursor: pointer;
+      }
+      .learn {
+        color: blue;
+      }
     }
   }
 }
