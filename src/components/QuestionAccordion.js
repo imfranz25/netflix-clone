@@ -19,22 +19,27 @@ function QuestionAccordion() {
 
   return (
     <div className="accordion-container">
+      <h1 className="faq-title">Frequently Asked Questions</h1>
       {questions.map((q, index) => (
         <Accordion
           key={index}
           expanded={expanded === `panel${index}`}
           onChange={handleChange(`panel${index}`)}
+          className="accordion"
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls={`panel${index}a-content`}
             id={`panel${index}a-content`}
+            className="acc-header"
           >
-            <Typography>{q.question}</Typography>
+            <Typography className="q-title">{q.question}</Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="acc-content">
             {q.answer.map((answer, id) => (
-              <Typography key={id}>{answer}</Typography>
+              <Typography key={id} className="q-answer">
+                {answer}
+              </Typography>
             ))}
           </AccordionDetails>
         </Accordion>

@@ -1,4 +1,46 @@
 .accordion-container {
-  padding: 50px;
+  border-top: 8px solid #222;
+  padding: 50px 250px;
   background-color: black;
+  .faq-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 60px 0px;
+    font-weight: 700;
+  }
+  .accordion {
+    margin-bottom: 10px;
+  }
+  .acc-header,
+  .acc-content {
+    background-color: rgba(10, 10, 10, 0.9);
+    color: white;
+    padding: 0px 30px;
+  }
+  .acc-content {
+    border-top: 2px solid black;
+    padding: 30px;
+  }
+}
+
+//MOBILE
+@media only screen and (max-width: 767px) {
+  .accordion-container {
+    .q-title {
+    }
+  }
+}
+
+// TABLET
+@media only screen and (min-width: 768px) {
+  .accordion-container {
+    .faq-title {
+      font-size: 54px;
+    }
+    .q-title,
+    .q-answer {
+      font-size: 22px;
+    }
+  }
 }
