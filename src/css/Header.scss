@@ -1,7 +1,6 @@
 /* HEADER SECTION STARTS */
 .showcase {
   width: 100%;
-  height: 100vh;
   position: relative;
   background: url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center
     center/cover;
@@ -33,15 +32,12 @@
     position: relative;
     text-align: center;
     position: relative;
-    top: 160px;
     width: 100%;
     h1,
     p {
       color: white;
     }
     input {
-      width: 35%;
-      padding: 22px;
       border: none;
       outline: none;
     }
@@ -74,16 +70,55 @@
 
 // MOBILE
 @media only screen and (max-width: 767px) {
+  .showcase {
+    height: 70vh;
+  }
   .get-started-container {
+    top: 90px;
     h1 {
-      font-size: 22px;
+      font-size: 35px;
+      margin-bottom: 15px;
     }
+    .para-1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    .para-2 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    button {
+      margin-top: 20px;
+      padding: 13px 22px 13px 22px;
+      margin-left: 0%;
+      font-size: 18px;
+    }
+    input {
+      width: 65%;
+      padding: 17px;
+    }
+    .email-container {
+      flex-direction: column;
+    }
+  }
+}
+
+// SMALL DEVICES
+@media only screen and (max-width: 420px) {
+  .get-started-container {
+    top: 120px;
   }
 }
 
 // MEDIA QUERIES - TABLET TO DESKTOP
 @media only screen and (min-width: 768px) {
+  .showcase {
+    height: 100vh;
+  }
   .get-started-container {
+    top: 160px;
     h1 {
       font-size: 50px;
       margin-bottom: 15px;
@@ -102,6 +137,10 @@
       padding: 15px 22px 15px 22px;
       margin-left: -0.3%;
       font-size: 26px;
+    }
+    input {
+      width: 40%;
+      padding: 22px;
     }
   }
 }
