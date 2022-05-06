@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// MATERIAL UI -> ACCORDION COMPONENT
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -28,7 +29,7 @@ function QuestionAccordion() {
           className="accordion"
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon className="expand-icon" />}
             aria-controls={`panel${index}a-content`}
             id={`panel${index}a-content`}
             className="acc-header"

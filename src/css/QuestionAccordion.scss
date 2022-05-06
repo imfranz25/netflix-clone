@@ -2,20 +2,26 @@
   border-top: 8px solid #222;
   padding: 50px 250px;
   background-color: black;
+  .expand-icon,
+  .faq-title,
+  .accordion {
+    color: white;
+  }
   .faq-title {
     width: 100%;
     text-align: center;
-    color: white;
     margin: 60px 0px;
     font-weight: 700;
   }
   .accordion {
     margin-bottom: 10px;
   }
+  .q-answer {
+    margin-bottom: 10px;
+  }
   .acc-header,
   .acc-content {
     background-color: rgba(10, 10, 10, 0.9);
-    color: white;
     padding: 0px 30px;
   }
   .acc-content {
