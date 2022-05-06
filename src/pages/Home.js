@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./../components/Header";
+import QuestionAccordion from "./../components/QuestionAccordion";
 // STYLE
 import "./../css/Home.scss";
 // ASSETS
@@ -14,7 +15,9 @@ import profile__img from "./../assets/images/create_profile.png";
 function Home() {
   return (
     <div className="home-container">
+      {/*Header Section*/}
       <Header />
+      {/*Main Container Section*/}
       <main className="main-section">
         <div className="section-container">
           <div className="left-column">
@@ -83,6 +86,9 @@ function Home() {
           </div>
         </div>
       </main>
+      {/*FAQ Section*/}
+      <QuestionAccordion />
+      {/*Email Section*/}
     </div>
   );
 }
