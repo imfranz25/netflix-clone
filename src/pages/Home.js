@@ -18,11 +18,13 @@ function Home() {
       <main className="main-section">
         <div className="section-container">
           <div className="left-column">
-            <h1>Enjoy on your TV.</h1>
-            <h3>
-              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-              Blu-ray players, and more.
-            </h3>
+            <div>
+              <h1>Enjoy on your TV.</h1>
+              <h3>
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray players, and more.
+              </h3>
+            </div>
           </div>
           <div className="right-column">
             <img src={tv__img} alt="Netflix TV" />

@@ -6,12 +6,7 @@
       border-top: 8px solid #222;
       background-color: black;
       display: flex;
-      padding: 0px 80px;
       // SECTION CONTAINER # 1 LAYOUT
-      .left-column {
-        padding-top: 13%;
-        padding-right: 2%;
-      }
       .left-column h1 {
         color: white;
       }
@@ -30,11 +25,6 @@
       .right-column img {
         position: absolute;
         width: 100%;
-      }
-      .video-1 {
-        margin-left: 13%;
-        margin-top: 16%;
-        width: 73%;
       }
     }
 
@@ -104,4 +94,50 @@
     }
   }
   /* MAIN SECTION ENDS */
+}
+
+// -----------------------SECTION BREAKPOINTS-------------
+
+// SMALL DEVICES
+@media only screen and (max-width: 1020px) {
+  .section-container {
+    padding: 50px 50px;
+    flex-direction: column;
+    justify-content: center;
+    .left-column {
+      h1,
+      h3 {
+        text-align: center;
+      }
+      h1 {
+        font-size: 48px;
+      }
+    }
+    .video-1 {
+      margin-left: 13%;
+      margin-top: 15%;
+      width: 73%;
+    }
+  }
+}
+
+// LARGE DEVICES
+@media only screen and (min-width: 1021px) {
+  .section-container {
+    padding: 0px 80px;
+    .right-column,
+    .left-column {
+      display: flex;
+      align-items: center;
+    }
+    .left-column {
+      padding-top: 2%;
+      padding-right: 2%;
+    }
+    .video-1 {
+      margin-left: 13%;
+      margin-top: -3%;
+      width: 73%;
+    }
+  }
 }
