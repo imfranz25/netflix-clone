@@ -3,34 +3,22 @@
   display: flex;
   justify-content: center;
   .form-box {
-    max-width: 350px;
     border-radius: 5px;
-    padding: 40px 55px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
     h1 {
       color: white;
-      margin-bottom: 20px;
-    }
-    .input-container {
-      width: 350px;
-      padding-top: 20px;
     }
     .MuiTextField-root {
       background-color: rgba(20, 20, 20, 0.8);
-      width: 350px;
       border-radius: 5px;
-      margin-bottom: 10px;
     }
     .sign-container {
-      margin-top: 30px;
       button {
         width: 100%;
         border: none;
         background-color: #e50914;
         color: white;
-        padding: 20px;
-        font-size: 16px;
         font-weight: 600;
         border-radius: 5px;
         cursor: pointer;
@@ -45,13 +33,6 @@
     }
     .new-container {
       color: rgba(255, 255, 255, 0.5);
-      label {
-        margin-top: 35px;
-      }
-      p {
-        margin-top: 10px;
-        font-size: 14px;
-      }
       span {
         margin-left: 5px;
         color: white;
@@ -59,6 +40,76 @@
       }
       .learn {
         color: blue;
+      }
+    }
+  }
+}
+
+//SMALL - MEDIUM DEVICES
+@media only screen and (max-width: 1079px) {
+  .form-box {
+    max-width: 300px;
+    padding: 30px 45px;
+    h1 {
+      margin-bottom: 20px;
+    }
+    .input-container {
+      width: 300px;
+      padding-top: 15px;
+    }
+    .MuiTextField-root {
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    .sign-container {
+      margin-top: 15px;
+      button {
+        padding: 15px;
+        font-size: 14px;
+      }
+    }
+    .new-container {
+      label {
+        margin-top: 25px;
+      }
+      p {
+        margin-top: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// LARGE DEVICES
+@media only screen and (min-width: 1080px) {
+  .form-box {
+    max-width: 350px;
+    padding: 40px 55px;
+    h1 {
+      margin-bottom: 20px;
+    }
+    .input-container {
+      width: 350px;
+      padding-top: 20px;
+    }
+    .MuiTextField-root {
+      width: 350px;
+      margin-bottom: 10px;
+    }
+    .sign-container {
+      margin-top: 30px;
+      button {
+        padding: 20px;
+        font-size: 16px;
+      }
+    }
+    .new-container {
+      label {
+        margin-top: 35px;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 14px;
       }
     }
   }
