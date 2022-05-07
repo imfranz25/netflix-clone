@@ -21,6 +21,12 @@ function Dashboard({ isAuth, setAuth }) {
       <Nav setAuth={setAuth} />
       <Banner />
       <Row
+        title="Continue Playing"
+        fetchURL={requests.fetchTrending}
+        isLargeRow
+        isContinuePlaying
+      />
+      <Row
         title="Netflix Originals"
         fetchURL={requests.fetchNetflixOriginals}
         isLargeRow

@@ -8,7 +8,7 @@ import "./../css/Row.scss";
 
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchURL, isLargeRow }) {
+function Row({ title, fetchURL, isLargeRow, isContinuePlaying }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
@@ -16,6 +16,14 @@ function Row({ title, fetchURL, isLargeRow }) {
     async function fetchData() {
       const request = await axios.get(fetchURL);
       setMovies(request.data.results);
+      // FOR CONTINUE PLAYING ONLY
+      if (isContinuePlaying) {
+        setMovies([
+          request.data.results[3],
+          request.data.results[5],
+          request.data.results[8],
+        ]);
+      }
     }
     fetchData();
   }, [fetchURL]);
@@ -45,7 +53,14 @@ function Row({ title, fetchURL, isLargeRow }) {
   return (
     <div className="row-container">
       <h2>{title}</h2>
-      <div className="row-posters">
+      <div
+        className="row-posters"
+        style={
+          isContinuePlaying && {
+            justifyContent: "flex-start",
+          }
+        }
+      >
         {movies.map((movie, index) => (
           <img
             onClick={() => handleTrailer(movie)}
@@ -55,6 +70,11 @@ function Row({ title, fetchURL, isLargeRow }) {
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
             alt={movie.name}
+            style={
+              isContinuePlaying && {
+                maxWidth: "168px",
+              }
+            }
           />
         ))}
       </div>
